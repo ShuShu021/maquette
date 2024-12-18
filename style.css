@@ -1,0 +1,265 @@
+nav {
+    display: flex;
+}
+
+#menu-mobil{
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    background-color: #FFD700;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header a:hover {
+    background-color: #fff;
+    color: #FFD700;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+  
+.main-banner {
+    background-image: url('/photowebp/cover.webp'); 
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white; 
+}
+.explore-btn {
+    background-color: #FF4D4D;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.collections {
+    text-align: center;
+    margin-top: 20px;
+}
+.collections-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.collection-item {
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    background: rgba(0,0,0,0.5);
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+.audio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.audio-container {
+    justify-content: center;
+    gap: 20px;
+}
+.audio-item {
+    background-color: #7084e7;
+    display: flex;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px; 
+    /* padding: 15px; */
+    gap: 15px;
+    width: 95%;
+    text-align: center;
+    color: whitesmoke;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+audio {
+    margin-top: 150px;
+    width: 500px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.titre-music h1 {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.video {
+    text-align: center;
+    margin-top: 20px;
+}
+.video-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+video {
+    border:#111;
+    border-radius: 10px;
+    width: 600px;
+    height: auto;
+}
+
+.artiste {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.artiste-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: none;
+}
+
+.artiste-item {
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: whitesmoke;
+    transition: transform 0.3s;
+}
+
+.artiste-item:hover {
+    transform: scale(1.05);
+}
+
+.apropos {
+    text-align: center;
+}
+
+.footer-end {
+    background-color: #FFD700;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.contact {
+    text-align: center;
+    background-color: #7084e7;
+    margin-top: 20px;
+    padding: 40px;
+    width: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    nav ul {
+        display: none;
+    }
+
+    #menu-mobil{
+        display: flex;
+        flex: 1;
+        justify-content: end;
+    }
+}
+@media (max-width: 900px) {
+    .audio-item {
+        width: calc(50% - 20px);
+        }
+    }
+
+@media (max-width: 600px) {
+    .audio-item {
+        width: 100%;
+    }
+ }
+
+@media (maxwidth: 600px) {
+    .artiste-item {
+        width: calc(40%);
+    }
+}
